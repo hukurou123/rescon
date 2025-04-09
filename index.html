@@ -22,7 +22,7 @@
   </header>
   <body>
     <!-- カルーセル -->
-    <div id="carousel" class="carousel slide">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <!-- 写真移動用ボタン -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,11 +41,11 @@
           </div>
         </div>
         <!-- 左右移動ボタン -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -56,11 +56,11 @@
         <div class="row row-col-1">
             <div class="col">
                 <div class="card text-bg-dark">
-                    <img src="images/rc_img.jpg" class="card-img" alt="...">
+                    <img src="images/rc_img1.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">レスキューロボットコンテスト</h5>
+                      <p class="card-text">毎年多くの大学や高専などが参加する，レスキューロボットコンテストに出場しており，レスキュー工学大賞を目指し日々活動しています．</p>
+                      <p class="card-text"><small><a href="https://www.rescue-robot-contest.org/">レスキューロボットコンテストについて</a></small></p>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 <div class="card text-bg-dark">
                     <img src="images/rc_img1.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">地域貢献活動</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small>Last updated 3 mins ago</small></p>
                     </div>
@@ -78,17 +78,17 @@
     </div>
     <!-- 実装紹介 -->
     <div id="Implementation-introduction">
-        <p class="h4 title">実装紹介</p>
+        <p class="h4 title">技術分野</p>
         <div id="card">
             <div class="card mb-3" style="max-width: 100%;">
                 <div class="row g-0">
                     <div class="col-md-3">
-                        <img src="images/kikou.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="images/kikou-2.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-9">
                         <div class="card-body">
-                            <h5 class="card-title">機構紹介</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">設計・加工</h5>
+                            <p class="card-text">3DCAD(Autodesk Inventor)を用いてロボットの設計を行います．<br>また設計したロボットを形のあるもののにするため，3Dプリンタや三次元加工機・レーザ加工機等の工作機械を用いて，アルミ板などの素材から部品を制作し組み立てます．</p>
                         </div>
                     </div>
                 </div>
@@ -96,12 +96,12 @@
             <div class="card mb-3" style="max-width: 100%;">
                 <div class="row g-0">
                     <div class="col-md-3">
-                        <img src="images/kairo.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="images/kairo-2.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-9">
                         <div class="card-body">
-                            <h5 class="card-title">基板紹介</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">電装</h5>
+                            <p class="card-text">ブレッドボードなどで試作した回路を回路CAD(KiCAD)を用いて回路図から基板を設計し，基板加工機やはんだごてなどを用い制作します．<br>またロボットの電気システム全体の配線を行い機体を動くものにします．</p>
                         </div>
                     </div>
                 </div>
@@ -109,12 +109,12 @@
             <div class="card mb-3" style="max-width: 100%;">
                 <div class="row g-0">
                     <div class="col-md-3">
-                        <img src="images/program.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="images/program-2.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-9">
                         <div class="card-body">
-                            <h5 class="card-title">プログラム紹介</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">制御</h5>
+                            <p class="card-text">C++/CやPython・JavaScript等の言語を用いてコーディングし，自由自在に機体を制御します．<br>マイコンを用いた電子回路の制御など低レイヤから，LAN経由でのGUI遠隔操縦システムなど高レイヤまで幅広く開発を行います．</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                 <div class="card h-100">
                     <img src="images/rc_img.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">1号機 スズラン</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                 <div class="card h-100">
                     <img src="images/rc_img1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">2号機 ミモザ</h5>
                     <p class="card-text">This is a short card.</p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                 <div class="card h-100">
                     <img src="images/rc_img2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">3号機 </h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                 <div class="card h-100">
                     <img src="images/kairo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">4号機 名称未定</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>

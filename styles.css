@@ -79,3 +79,8 @@ footer{
     order: 5;
     flex-grow: 0;
 }
+
+.d-block.w-100 {
+    /* カーセル画像をぼかす */
+    filter: blur(3px);
+}
