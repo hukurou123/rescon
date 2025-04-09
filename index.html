@@ -8,19 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="./styles.css" rel="stylesheet">
 </head>
-  <header>
-    <a href="./index.html">
-    <img src="images/Logo.png" alt="logo" width="110px" height="50px">
-    </a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Products</a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Solusion</a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Community</a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Resources</a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Pricing</a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Contact</a>
-    <a href="https://www.google.co.jp" class="link-dark text-decoration-none link-opacity-75-hover">Link</a>
+  <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="images/Logo.png" alt="logo" width="110px" height="50px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Products</a></li>
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Solusion</a></li>
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Community</a></li>
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Resources</a></li>
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Pricing</a></li>
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Contact</a></li>
+          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Link</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
-  <body>
+  <body class="container-fluid">
     <!-- カルーセル -->
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <!-- 写真移動用ボタン -->
@@ -51,16 +60,16 @@
         </button>
     </div>
     <!-- 活動紹介 -->
-    <div id="Activity-introduction">
+    <div id="Activity-introduction" class="container py-4">
         <p class="h4 title">活動紹介</p>
-        <div class="row row-col-1">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card text-bg-dark">
                     <img src="images/rc_img1.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
                       <h5 class="card-title">レスキューロボットコンテスト</h5>
                       <p class="card-text">毎年多くの大学や高専などが参加する，レスキューロボットコンテストに出場しており，レスキュー工学大賞を目指し日々活動しています．</p>
-                      <p class="card-text"><small><a href="https://www.rescue-robot-contest.org/">レスキューロボットコンテストについて</a></small></p>
+                      <p class="card-text"><small><a href="https://www.rescue-robot-contest.org/" class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-light">レスキューロボットコンテストについて</a></small></p>
                     </div>
                 </div>
             </div>
@@ -77,7 +86,7 @@
         </div>
     </div>
     <!-- 実装紹介 -->
-    <div id="Implementation-introduction">
+    <div id="Implementation-introduction" class="container py-4">
         <p class="h4 title">技術分野</p>
         <div id="card">
             <div class="card mb-3" style="max-width: 100%;">
@@ -122,7 +131,7 @@
         </div>
     </div>
     <!-- 機体紹介 -->
-    <div id="Aircraft-introduction">
+    <div id="Aircraft-introduction" class="container py-4">
         <p class="h4 title">機体紹介</p>
         <div id="card">
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -167,27 +176,33 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
-  <footer>
-    <div id="icons">
-        <img src="images/Logo.png" alt="logo" class="img-fluid" width="80px" height="20px">
-        <a href="https://x.com/nagakuteborders" target="_blank">
-        <img width="70" height="70" src="images/X_logo.png" alt="twitter"/>
-        </a>
-    </div>
-    <div>
-        <h6>title</h6>
-        <h7>nantyara</h7><br>
-        <h7>kantyara</h7><br>
-        <h7>uooooo</h7>
-    </div>
-    <div>
-        <h6>title</h6>
-        <h7>nnnnnn</h7>
-    </div>
-    <div>
-        <h6>title</h6>
-        <h7>owaaaaaa</h7><br>
-        <h7>qawsedrftgyhujikolp</h7>
+  <footer class="container-fluid bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center mb-4">
+          <div id="icons">
+            <img src="images/Logo.png" alt="logo" class="img-fluid mb-3" width="80px" height="20px">
+            <a href="https://x.com/nagakuteborders" target="_blank" rel="noopener noreferrer">
+              <img width="70" height="70" src="images/X_logo.png" alt="twitter" class="img-fluid" style="padding-bottom: 18px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="mb-3">title</h6>
+          <p class="mb-1">nantyara</p>
+          <p class="mb-1">kantyara</p>
+          <p class="mb-1">uooooo</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="mb-3">title</h6>
+          <p class="mb-1">nnnnnn</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="mb-3">title</h6>
+          <p class="mb-1">owaaaaaa</p>
+          <p class="mb-1">qawsedrftgyhujikolp</p>
+        </div>
+      </div>
     </div>
   </footer>
 </html>
