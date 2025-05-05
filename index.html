@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="./styles.css" rel="stylesheet">
 </head>
-  <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container">
+  <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
         <img src="images/Logo.png" alt="logo" width="110px" height="50px">
       </a>
@@ -18,13 +18,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Products</a></li>
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Solusion</a></li>
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Community</a></li>
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Resources</a></li>
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Pricing</a></li>
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Contact</a></li>
-          <li class="nav-item"><a href="https://www.google.co.jp" class="nav-link link-dark">Link</a></li>
+          <li class="nav-item"><a href="#scrollspyHeading1" class="nav-link link-dark">活動紹介</a></li>
+          <li class="nav-item"><a href="#scrollspyHeading2" class="nav-link link-dark">技術分野</a></li>
+          <li class="nav-item"><a href="#scrollspyHeading3" class="nav-link link-dark">機体紹介</a></li>
+          <li class="nav-item"><a href="#scrollspyHeading4" class="nav-link link-dark">コンタクト</a></li>
         </ul>
       </div>
     </div>
@@ -61,7 +58,7 @@
     </div>
     <!-- 活動紹介 -->
     <div id="Activity-introduction" class="container py-4">
-        <p class="h4 title">活動紹介</p>
+        <p class="h4 title" id="scrollspyHeading1">活動紹介</p>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card text-bg-dark">
@@ -87,7 +84,7 @@
     </div>
     <!-- 実装紹介 -->
     <div id="Implementation-introduction" class="container py-4">
-        <p class="h4 title">技術分野</p>
+        <p class="h4 title" id="scrollspyHeading2">技術分野</p>
         <div id="card">
             <div class="card mb-3" style="max-width: 100%;">
                 <div class="row g-0">
@@ -132,7 +129,7 @@
     </div>
     <!-- 機体紹介 -->
     <div id="Aircraft-introduction" class="container py-4">
-        <p class="h4 title">機体紹介</p>
+        <p class="h4 title" id="scrollspyHeading3">機体紹介</p>
         <div id="card">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -177,7 +174,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
   <footer class="container-fluid bg-light py-4">
-    <div class="container">
+    <div class="container" id="scrollspyHeading4">
       <div class="row">
         <div class="col-md-3 text-center mb-4">
           <div id="icons">
